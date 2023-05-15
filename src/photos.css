@@ -1,0 +1,193 @@
+*{ 
+    box-sizing: border-box; 
+    font-family: 'Bellefair', serif;
+    letter-spacing: .2em;
+    text-transform: uppercase;
+    font-weight: 200;
+    color: black;
+    text-decoration: none;
+  }
+
+
+  body {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    font-size: .75em;
+    margin: 0;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 80px auto 100px 100px;
+    grid-template-areas:
+      ". n n n n n n n n n n d"
+      "m c c c c c c c c c c a"
+      "s c c c c c c c c c c a"
+      "s . . . . . . . . . . b"
+      "s . . . . . . . . . . b";
+    }
+
+    .centerItem{
+      display: flex;           
+      align-items: center;      
+      justify-content: center ;  
+    }
+
+  .topBar{
+    grid-area: n;
+    display: flex;
+    align-items: center;
+    padding-right: 20px;
+    animation: 2s ease-out 0s 1 fadeIn;
+  }
+
+  span{
+    box-sizing: border-box;
+    position: relative;
+  }
+
+  span:after{
+    display: block;
+    position: absolute;
+    width: 100%;
+    content: "";
+    border-bottom: 1px solid black;
+    padding: 0 0 .4em 2em;  
+    left: -3em;
+    animation: 2s ease-out 0s slideInFromLeft
+  }
+  strong{
+    font-weight: 800;
+   color:#557153;
+  }
+
+
+  .leftNavBar{
+    grid-area: m;
+    align-self: start;
+  }
+  .leftNavBar ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    transform: rotate(180deg);
+    color:#557153;
+  }
+  .leftNavBar ul li{
+    writing-mode: vertical-rl;
+    padding-top: 5vh;
+    transform: translateX(25%);
+  }
+  li a.active{
+    display: block;
+    padding-left: .3em;
+    border-left: 1px solid black;
+    animation: 3s ease-out 0s 1 slideInFromBottomActive;
+  }
+
+  li a:hover{
+    color:#557153;
+  }
+
+  .color-click{
+    color:#BA7967;
+  }
+
+
+  .container{
+    grid-area: c;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-auto-rows: 250px;
+    grid-gap: 15px;
+    grid-auto-flow: dense;
+    overflow: auto;
+    padding:0 0 200px 10px;  
+  }
+  
+  .container>div{
+    z-index: 1;
+    position: relative;
+    padding: 0;
+    overflow: hidden;
+    box-shadow: 5px 5px 10px rgba(0,0,0,.2), 
+                5px 5px 25px rgba(0,0,0,.1);
+    transition: all .2s ease-in-out;
+  }
+  .container div img{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    overflow: hidden;
+    transition: all .2 s ease-in-out;
+  }
+  
+  .container>div:hover, .container>div:hover img{
+    transform: scale(1.05);
+  }
+  
+
+  .vertical{
+    grid-row: span 2;
+  }
+
+  .horizontal{
+    grid-column: span 2;
+  }
+
+  .big{
+    grid-row: span 2;
+    grid-column: span 2;
+  }
+
+
+  
+  /* Animation Stuff 
+  *:not(a){
+    animation: 1s ease-out 0s 1 fadeIn;
+  }
+  @keyframes slideInFromLeft{
+    0%{
+      transform: translateX(-130%);
+    }
+    100%{
+      transform: translateX(0);
+    }
+  }
+  @keyframes slideInFromRight{
+    0%{
+      transform: translateX(300%);
+    }
+    100%{
+      transform: translateX(0);
+    }
+  }
+  @keyframes slideInFromBottomActive{
+    0%{
+      padding-bottom: 100px;
+    }
+    100%{
+    }
+  }
+  @keyframes slideInFromTop{
+    0%{
+      opacity: 0;
+      margin-bottom: -100%;;
+    }
+    100%{
+      opacity: 1;
+    }
+  }
+  @keyframes fadeIn{
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  */
+
+  

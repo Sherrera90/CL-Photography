@@ -1,0 +1,632 @@
+/*@media screen and (max-width: 700px) and (min-width: 400px){
+
+.menu-top{
+  position:relative;
+}
+
+.color-top{
+  display:none;
+}
+
+.top-picture h2{
+  display:inline-block;
+  position:relative;
+  top:5%;
+  width:30%;
+  border-radius:5px;
+  text-align:center;
+  color:#EDF1D6;
+  background-color:#688474;
+  font-size:35px;
+}
+
+.first-photo,
+.third-photo,
+.buns-drink,
+.office-quote{
+  width:0%;
+  border:none;
+  display:none;
+  }
+.bunnie{
+  position:relative;
+  top:-55px;
+  width:85%;
+  }
+.container-two{
+  position:relative;
+  width:100%;
+  height:100%;
+  top:-25px;
+  font-size:21px;
+  }
+.container-two h2{
+    font-size:30px;
+  }
+  .about-btn{
+    position:relative;
+    top:-65px;
+    left:-250px;
+    height:42px;
+    width:200px;
+    font-size:20px;
+}
+  .long-photo{
+    width:100%;
+  }
+  .layer{
+   margin-left:35px;
+   padding:35px;
+   width:100%;
+  }
+
+  .layer p{
+    font-size:20px;
+    width:80%;
+    position:relative;
+    top:-5%;
+    left:10%;
+  }
+}
+   
+
+  /* ABOUT
+
+.top-about-section{
+    height:85%;
+    width:100%;
+    padding:0px;
+    margin:0px;
+   
+}
+.girl-info p{
+    position:relative;
+    width:100%;
+    height:55%;
+    float:left;
+    font-size:19px;
+}
+h3{
+    position:relative;
+    left:125%;
+    font-size:25px;
+}
+
+.photo-about{
+    position:relative;
+    top:15%;
+}
+
+.fun-facts p{
+    font-size:18px;
+}
+
+ /* PRICING 
+ .main-price-container{
+    width:90%;
+ }
+  
+  .gallery{
+      width:100vw;
+      height:50vh;
+  }
+  .gallery-img{
+      width:100%;
+  }
+  .gallery-item-container{
+      width:550px;
+      height:500px;
+  }
+  .gallery-item-description{
+      width:150px;
+      height:200px;
+      display:block;
+  }
+}*/
+
+@media only screen 
+   and (min-width : 1200px) {
+   /* Laptop */
+}
+
+@media only screen 
+   and (min-width : 1600px) {
+   /*desktop */
+}
+
+
+/*======================== MEDIA QUERIES ======================
+@media only screen 
+   and (max-width : 320px) {
+   /* smart phone
+.color-top{
+  width:100%;
+}
+
+.top-picture{
+  display:none;
+}
+.image-container{
+  display:none;
+}
+
+.container-two{
+  margin-left:5%;
+}
+.office-quote{
+  display:none;
+}
+.long-photo,
+.color-top{
+    display:none;
+}.layer{
+  width:100%;
+}
+
+}
+
+/*@media screen and (max-width:1024px) and (min-width: 615px) { /*smallest screen*
+.menu-top{
+    position:relative;
+}
+
+.color-top{
+    display:none;
+}
+
+.top-picture{
+  width:100%;
+}
+
+.first-photo,
+.third-photo,
+.buns-drink,
+.office-quote{
+  width:0%;
+  border:none;
+  display:none;
+}
+.bunnie{
+  position:relative;
+  top:-55px;
+  width:85%;
+}
+.container-two{
+  position:relative;
+  width:100%;
+  height:100%;
+  top:-25px;
+  font-size:21px;
+}
+.container-two h2{
+  font-size:30px;
+}
+.about-btn{
+  position:relative;
+  top:5%;
+  height:42px;
+  width:200px;
+  font-size:20px;
+}
+.long-photo{
+  width:100%;
+}
+.layer{
+  position:relative;
+  left:5%;
+  padding:35px;
+  width:75%;
+}
+
+.layer p{
+  font-size:24px;
+  width:80%;
+  text-align:center;
+ }
+}
+   
+
+  /* ABOUT
+
+.top-about-section{
+    height:85%;
+    width:100%;
+    padding:0px;
+    margin:0px;
+   
+}
+.girl-info p{
+    position:relative;
+    width:100%;
+    height:55%;
+    float:left;
+    font-size:19px;
+}
+h3{
+    position:relative;
+    left:125%;
+    font-size:25px;
+}
+
+.photo-about{
+    position:relative;
+    top:15%;
+}
+
+.fun-facts p{
+    font-size:18px;
+}
+
+ /* PRICING 
+ .main-price-container{
+    width:90%;
+ }
+  
+  .gallery{
+      width:100vw;
+      height:50vh;
+  }
+  .gallery-img{
+      width:100%;
+  }
+  .gallery-item-container{
+      width:550px;
+      height:500px;
+  }
+  .gallery-item-description{
+      width:150px;
+      height:200px;
+      display:block;
+  }
+}
+  */
+  /*@media screen and (max-width:1024px) and 
+  @media screen and (max-width: 700px) and (min-width: 400px) {
+      .layer h2{
+          font-size:35px;
+      }
+      .layer p{
+          position:absolute;
+          top:15%;
+          width:55%;
+          font-size:15px;
+      }
+  
+      .container-two{
+          position:relative;
+          top:-350px;
+      }
+  
+      .flex-container{
+          height:35%;
+      }
+     
+    }
+    
+    /*======================== Mobile ====================== */
+  
+/*.layer h2{
+  font-size:25px;
+}
+.layer p{
+  position:absolute;
+  top:25%;
+  width:55%;
+  font-size:25px;
+}
+.container-two{
+  position:relative;
+  font-size:15px;
+  top:-190px;
+}
+.container-two h2{
+  font-size:25px;
+}
+.about-btn{
+  font-size:15px;
+  width:155px;
+  height:40px;
+}*/
+
+
+
+
+
+      /*ChatGPT Queries 
+      /*ChatGPT Queries 
+/*Media queries for screens with a maximum width of 768 pixels */
+@media screen and (max-width: 480px) {
+    .top-picture {
+      float: none;
+      width: 100%;
+      height: 50vh;
+      background-size: cover;
+      background-position: center;
+    }
+    .color-top {
+      float: none;
+      width: 100%;
+      height: 50vh;
+      background-size: cover;
+      background-position: center;
+    }
+    .color-top h2 {
+      font-size: 40px;
+    }
+    .menu-top {
+      display: none;
+    }
+  }
+  
+  /* Media queries for screens with a minimum width of 769 pixels 
+  @media screen and (min-width: 769px) {
+    .top-picture {
+      width: 55%;
+      height: 100%;
+      float: left;
+      background-attachment: fixed;
+    }
+    .color-top {
+      width: 45%;
+      height: 100%;
+      float: right;
+    }
+    .color-top h2 {
+      font-size: 60px;
+    }
+
+    .menu-top {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      border: 10px #688474 solid;
+      height: 115px;
+      z-index: 1;
+    }
+    /*.hidden-menu {
+      display: none;
+    }
+  }
+  
+  /* Media queries for screens with a minimum width of 1024 pixels 
+  @media screen and (min-width: 1024px) {
+    .container-two h2 {
+      font-size: 60px;
+    }
+  }
+  
+  /* Media queries for screens with a minimum width of 1440 pixels 
+  @media screen and (min-width: 1440px) {
+    .container-two h2 {
+      font-size: 80px;
+    }
+  }
+
+  /*ABOUT CHATGPT 
+  @media screen and (max-width: 768px) {
+    /* styles for screens with maximum width of 768px 
+    .header-top h1 {
+        top: 150%;
+        font-size: 40px;
+    }
+    .about-top{
+        padding: 0 0 0 25px;
+    }
+    
+    /*.menu-content {
+        padding: 0 0 0 25px;
+    }
+    .hidden-menu {
+        margin: 10px;
+    }
+    .hidden-menu a {
+        font-size: 25px;
+    }
+    .girl-info {
+        margin-left: 0;
+        width: 100%;
+        height: 100%;
+        float: none;
+        text-align: center;
+    }
+    .photo-about img {
+        left: 0;
+        width: 50%;
+    }
+    .fun-facts h2 {
+        font-size: 35px;
+    }
+    .fun-facts p {
+        font-size: 20px;
+        margin: 5px;
+    }
+    .numbers-p {
+        font-size: 35px;
+        margin: 10px;
+    }
+}
+
+ /* styles for screens with maximum width of 480px 
+@media screen and (max-width: 480px) {
+    .header-top h1 {
+        top: 100%;
+        font-size: 25px;
+    }
+    .about-top, .menu-content {
+        padding: 0 0 0 15px;
+    }
+    .hidden-menu a {
+        font-size: 20px;
+        padding: 5px;
+    }
+    .hidden-menu .label-color {
+        font-size: 30px;
+        padding: 5px 0 5px 35px;
+    }
+    .girl-info {
+        font-size: 20px;
+    }
+    .photo-about img {
+        width: 80%;
+    }
+    .fun-facts h2 {
+        font-size: 25px;
+    }
+    .fun-facts p {
+        font-size: 15px;
+        margin: 5px;
+    }
+    .numbers-p {
+        font-size: 25px;
+        margin: 5px;
+    }
+}
+
+/*price*/
+/* Small screens (mobile) 
+@media only screen and (max-width: 600px) {
+    .header-top2 {
+      height: 100%;
+    }
+    
+    .price-top {
+      top: -35%;
+    }
+    
+    .hidden-menu label {
+      font-size: 35px;
+      background-size: 45px;
+      padding: 10px 5px 10px 30px;
+      letter-spacing: 5px;
+    }
+    
+    .hidden-menu .price-color {
+      padding: 35px;
+      margin-top: -35px;
+    }
+    
+    .price-top strong {
+      font-size: 25px;
+      padding-left: 10px;
+    }
+    
+    .header-top2 h1 {
+      font-size: 35px;
+      top: -35%;
+    }
+    
+    .main-price-container h2 {
+      font-size: 35px;
+    }
+    
+    img {
+      width: 100%;
+      height: auto;
+    }
+    
+    .picture-container {
+      margin: 15px;
+      padding: 10px;
+    }
+    
+    .words-container {
+      margin: 0;
+      font-size: 16px;
+    }
+    
+    .love-container h2 {
+      width: 90%;
+      font-size: 20px;
+    }
+    
+    footer {
+      font-size: 16px;
+    }
+    
+    .social-items img {
+      width: 60px;
+      height: 60px;
+    }
+  }
+  
+  /* Medium screens (tablet) 
+  @media only screen and (min-width: 601px) and (max-width: 960px) {
+    .hidden-menu label {
+      font-size: 40px;
+      background-size: 50px;
+      padding: 10px 5px 10px 40px;
+      letter-spacing: 8px;
+    }
+    
+    .hidden-menu .price-color {
+      padding: 45px;
+      margin-top: -45px;
+    }
+    
+    .price-top strong {
+      font-size: 30px;
+      padding-left: 15px;
+    }
+    
+    .header-top2 h1 {
+      font-size: 45px;
+      top: -65%;
+    }
+    
+    .main-price-container h2 {
+      font-size: 40px;
+    }
+    
+    img {
+      width: 100%;
+      height: auto;
+    }
+    
+    .picture-container {
+      margin: 20px 100px 15px;
+      padding: 15px;
+    }
+    
+    .words-container {
+      margin: 0;
+      font-size: 18px;
+    }
+    
+    .love-container h2 {
+      width: 70%;
+      font-size: 25px;
+    }
+    
+    footer {
+      font-size: 20px;
+    }
+    
+    .social-items img {
+      width: 70px;
+      height: 70px;
+    }
+  }
+  
+  /* Large screens (desktop) 
+  @media only screen and (min-width: 961px) {
+    .hidden-menu label {
+      font-size: 45px;
+      background-size: 55px;
+      padding: 10px 5px 10px 50px;
+      letter-spacing: 10px;
+    }
+    
+    .hidden-menu .price-color {
+      padding: 55px;
+      margin-top: -55px;
+    }
+    
+    .price-top strong {
+      font-size: 35px;
+      padding-left: 25px;
+    }
+    
+    .header-top2 h1 {
+      font-size: 75px;
+    }
+}
