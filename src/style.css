@@ -10,7 +10,7 @@
 
 body,
 html{
-    width:100%;
+    width:100vw;
     height:100vh;
     margin:0rem;
     padding:0px;
@@ -24,18 +24,18 @@ html{
     height:100%;
     clear:both;
 }
-/*.top-container:after{
+.top-container:after{
     content:"";
     display:table;
     clear:both;
-}*/
+}
 
 
 .top-picture{
     position:relative;
     float:left;
     height:100%;
-    width:60%;
+    width:55%;
     background-image: url('/imgs/CZEngagement01.jpg');
     background-position:center;
     background-size:cover;
@@ -46,7 +46,7 @@ html{
 .color-top{
   float:right;
   height:100%;
-  width:40%;
+  width:45%;
   display:flex;
 justify-content: center;
 align-items: center;
@@ -64,7 +64,7 @@ align-items: center;
     align-items: center;
     top:-5%;
     height:100%;
-    width:100%;
+    width:95%;
     position:relative;
     color:#EDF1D6;
     text-align:center;
@@ -178,18 +178,21 @@ align-items: center;
 
 /* ================ Who We Are ======================== */
 .who-we-are{
+  display:flex;
+  justify-content: center;
+  align-items: center;
     clear:both;
-    width:100%;
+    width:100vw;
     height:90vh;
     background-color:#EEECE9;
 }
 
 .outer-container{
     position:relative;
-    left:-8%;
+    margin:0 auto;
     top:5%;
     display:flex;
-    width:100%;
+    width:95vw;
     height:90vh;
 }
 
@@ -210,9 +213,10 @@ align-items: center;
 .image-container{
     position:relative;
     width:100%;
+    left:-5%;
     display:flex;
     align-items:center;
-    justify-content: center;
+    justify-content: flex-start;
 }
 
 .buns-drink{
@@ -243,8 +247,7 @@ justify-content: center;
 }
 
 .about-btn{
-    margin:5%;
-    padding:10px;
+  padding:5px;
     font-size:24px;
     border-radius:10px;
     background-color:#B66E57;
@@ -296,16 +299,14 @@ justify-content: center;
     position:relative;
     height:100%;
     width:50%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
     background-size: cover;
     background-repeat: no-repeat;
-    background-image:url('/imgs/1.jpeg');
+    background-image:url('/imgs/22\ 9.15.16\ AM.jpeg');
 }
 .layer{
-    position:relative;
-    top:35%;
-    left:-20%;
-    width:135vh;
-    height:25%;
     border-radius:15px;
     background-color: white;
     opacity:.8;
@@ -411,7 +412,7 @@ justify-content: center;
 }
 /*======================================FOOTER SECTION ============================= */
 footer{
-    width:100%;
+    width:100vw;
     height:auto;
     font-size:20px;
     text-align:center;
@@ -425,15 +426,10 @@ footer{
  }
   
 .social-items img{
-    color: #fff;
     width: 80px;
     height: 80px;
     opacity: 0.8;
     font-size: 1.4rem;
-}
-  
-.social-items a:hover{
-    opacity: 1;
 }
   
 .list-social{
@@ -448,13 +444,15 @@ footer{
 }
   
 .list-social a{
+  color: #fff;
     opacity: 0.8;
-    color: #fff;
     text-decoration: none;
 }
-  .list-social p{
-    color:#1C383E;
-  }
+
+footer p{
+  color:#662E27;
+}
+
 .list-social li{
     padding: 0 15px;
     display:inline-block;
@@ -472,6 +470,89 @@ footer{
 }
 
 
+/* =====================Media Queries=========================== */
 
+/* Small screens */
+@media all and (min-width: 375px) and (max-width:768px) {
+  .top-picture {
+    width: 100%;
+    height:45%;
+    float: none;
+  }
 
+  .color-top {
+    width: 100%;
+    height:45%;
+  }
 
+  .color-top h2 {
+    margin:5%;
+    font-size: 25px;
+  }
+
+  .nav-container h1 {
+    font-size: 20px;
+  }
+  strong{
+    font-size:18px;
+  }
+
+  .hide {
+    top:60px;
+  }
+
+  .image-container{
+    display:none;
+  }
+
+  .container-two {
+    display:flex;
+    flex-direction:column;
+    font-size:15px;
+    margin:2%;
+  }
+
+  .office-quote h3 {
+    visibility:hidden;
+  }
+  .about-btn{
+    width:55%;
+    margin:5%;
+    font-size:15px;
+    border-radius:10px;
+    background-color:#B66E57;
+  }
+
+  .info-container {
+    flex-direction: row;
+  }
+
+  .first-photo,
+  .third-photo {
+   width:0%;
+   border:none;
+   display:none;
+  }
+
+  .long-photo {
+    width: 100%;
+  }
+
+  .layer {
+    display:flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+  }
+
+  .layer p {
+    font-size: 18px;
+  }
+
+  .list-social,
+  .copyright,
+  footer p{
+    font-size:15px;
+  }
+
+}
