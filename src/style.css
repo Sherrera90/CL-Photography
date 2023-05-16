@@ -5,13 +5,14 @@
     box-sizing: border-box;
     font-family: 'Bellefair', serif;
     font-weight:300;
+    text-size-adjust:auto;
 }
 
 body,
 html{
-    width:100vw;
+    width:100%;
     height:100vh;
-    margin:0px;
+    margin:0rem;
     padding:0px;
     overflow-x:hidden;
 }
@@ -31,35 +32,43 @@ html{
 
 
 .top-picture{
+    position:relative;
     float:left;
     height:100%;
     width:60%;
     background-image: url('/imgs/CZEngagement01.jpg');
-    background-position:inherit;
+    background-position:center;
     background-size:cover;
+    background-attachment:100% 100%;
     background-repeat: no-repeat;
-    
 }
 
 .color-top{
   float:right;
   height:100%;
   width:40%;
+  display:flex;
+justify-content: center;
+align-items: center;
   background-position: center;
   background-repeat: no-repeat;
   background-size:cover;
   background-color:#1C383E;
   opacity:.9;
-  overflow-x:hidden;
+  overflow:hidden;
 } 
 
 .color-top h2{
-  position:relative;
-  top:25%;
-  color:#EDF1D6;
-  text-align:center;
-  font-size:60px;
-  width:95%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    top:-5%;
+    height:100%;
+    width:100%;
+    position:relative;
+    color:#EDF1D6;
+    text-align:center;
+    font-size:60px;
 }
 
 /*---------New NAV -------------- */
@@ -167,115 +176,43 @@ html{
   }
 
 
-
-/*---------Collapsible NAV -------------- 
-.menu-top{
-    position:relative;
-    display:flex;
-    flex-direction:column;
-    height:115px;
-    z-index:1;
-    clear:both;
-}
-
-
-
-.menu-content{
-    font-family: 'Bellefair', sans-serif;
-    max-height:0;
-    overflow:hidden;
-}
-
-.hidden-menu{
-    position:relative;
-    display:flex;
-    justify-content:center;
-    flex-direction:column;
-    align-items:center;
-    padding-left:20px;
-    margin:15px;
-    color:white;
-    letter-spacing:5px;
-}
-
-.hidden-menu ul{
-    list-style:none;
-}
-
-.hidden-menu a{
-    display:block;
-    padding: 10px;
-    text-decoration: none;
-    color:#B66E57;
-    font-size:30px;
-}
-
-.hidden-menu .label-logo{
-    font-family:'Bellefair', sans-serif;
-    font-size:45px;
-    display:block;
-    cursor:pointer;
-    background: url('/imgs/menu(2).png') no-repeat left center;
-    background-size:55px;
-    padding: 10px 25px 5px 70px;
-    color:black;
-} 
-
-strong{
-    position:relative;
-    top:10%;
-    font-weight: 500;
-    font-size:25px;
-    color:#B66E57;
-    font-family: 'Italiana', serif;
-    padding-left:10px;
-}
-
-input#menu{
-    display:none;
-}
-
-input:checked + label {
-    background-image: url('/imgs/diaphragm(1).png');
-    background-size:35px;
-    background-repeat: no-repeat;
-}
-
-input:checked ~ label{
-    background-image: url ('/imgs/diaphragm(1).png');
-    background-size:35px;
-}
-
-input:checked ~ .menu-content{
-    margin:-5px;
-    background-color:#FFE7CC;
-    max-height:1000px;
-    width:50%;
-    opacity:.9;
-    border-radius:5px;
-}
-
 /* ================ Who We Are ======================== */
 .who-we-are{
-    position:relative;
+    clear:both;
     width:100%;
-    height:90%;
+    height:90vh;
     background-color:#EEECE9;
 }
 
 .outer-container{
-    width:100%;
-    height:100%;
+    position:relative;
+    left:-8%;
+    top:5%;
     display:flex;
-    justify-content: center;
-    align-items:center;
+    width:100%;
+    height:90vh;
+}
+
+.container-two{
+    height:50px;
+    font-size:23px;
+    text-align:center;
+}
+  
+.container-two h2{
+    position:relative;
+    top:5%;
+    font-family: 'Italiana', serif;
+    font-size:45px;
+    color:#B66E57;
 }
 
 .image-container{
     position:relative;
     width:100%;
-    top:-20%;
-    left:-10%;
+    display:flex;
+    align-items:center;
+    justify-content: center;
 }
 
 .buns-drink{
@@ -301,22 +238,8 @@ input:checked ~ .menu-content{
  font-family: 'Italiana', serif;
  text-align:center;
  font-size:55px;
- left:-25%;
-}
-
-.container-two{
-    position:relative;
-    top:-60%;
-    left:-5%;
-    height:50px;
-    font-size:25px;
-    text-align:center;
-}
-
-.container-two h2{
-    font-family: 'Italiana', serif;
-    font-size:40px;
-    color:#B66E57;
+display:flex;
+justify-content: center;
 }
 
 .about-btn{
@@ -340,7 +263,7 @@ input:checked ~ .menu-content{
 
 /* ================ INFO-EXCITED ======================== */
 .second-container{
-    height:75%;
+    height:75vh;
     width:100%;
     background-image:url('/imgs/background.jpeg');
     background-size:cover;
@@ -359,7 +282,7 @@ input:checked ~ .menu-content{
     width:30%;
     background-size: cover;
     background-repeat: no-repeat;
-    background-image:url('/imgs/Brandie.jpeg');
+    background-image:url('/imgs/sky.jpeg');
 }
 .third-photo{
     height:100%;
@@ -375,21 +298,21 @@ input:checked ~ .menu-content{
     width:50%;
     background-size: cover;
     background-repeat: no-repeat;
-    background-image:url('/imgs/one-party.jpeg');
+    background-image:url('/imgs/1.jpeg');
 }
 .layer{
     position:relative;
     top:35%;
     left:-20%;
-    width:135%;
+    width:135vh;
     height:25%;
     border-radius:15px;
     background-color: white;
-}
+    opacity:.8;
+    }
 
 .layer p{
     margin:4%;
-    position:absolute;
     text-align:center;
     color:#AB4F23;
     font-size:25px;
@@ -547,6 +470,8 @@ footer{
     text-align: center;
     color: #FFE7CC;
 }
+
+
 
 
 
