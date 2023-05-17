@@ -11,7 +11,7 @@
 body,
 html{
   background-color:#EEE2DA;
-  width:100%;
+  width:100vw;
   min-height:100vh;
   margin:0rem;
   padding:0px;
@@ -19,7 +19,7 @@ html{
 }
 
 .header-top2{
- width:100%;
+ width:100vw;
  height:65vh;
 
 }
@@ -154,84 +154,10 @@ strong{
   transform: rotate(-45deg) translate(7px, -6px);
 }
 
-
-/*---------Collapsible NAV -------------- 
-.menu-content{
-  max-height:0;
-  padding: 15px 0 0 50px;
-  overflow:hidden;
-}
-
-.hidden-menu{
-  position:relative;
-  left:-1%;
-  padding:75px 0 0 45px;
- letter-spacing:5px;
- 
-}
-
-.hidden-menu ul{
-  list-style:none;
-}
-
-.hidden-menu a{
-  display:block;
-  padding: 10px;
-  text-decoration: none;
-  color:#B66E57;
-  font-size:30px;
-  letter-spacing:5px;
-}
-
-.hidden-menu .price-color{
-  font-size:45px;
-  display:block;
-  cursor:pointer;
-  background: url('/imgs/diaphragm(1).png') no-repeat left center;
-  background-size:50px;
-  padding: 10px 25px 5px 70px;
-  margin-top:-55px;
-  text-shadow: 2px 2px black;
-}
-
-
-.price-top strong{
-  font-weight: 500;
-  font-size:35px;
-  color:#B66E57;
-  text-shadow: 2px 2px white;
-}
-
-input#menu{
-  display:none;
-}
-
-input:checked + label {
-  background-size:40px;
-  background-repeat: no-repeat;
-}
-
-input:checked ~ label{
-  background-image: url('/imgs/menu(2).png');
-  background-size:35px;
-}
-
-input:checked ~ .menu-content{
-  background-color:#FFE7CC;
-  max-height:1000px;
-  width:40%;;
-  opacity:.9;
-  border-radius:5px;
-}
-
-input:checked + .price-color {
-  background-image: url('/imgs/menu(2).png');
-}
-
 /*=========================Packages ======================= */
 
 .main-price-container{
-  width:100%;
+  width:100vw;
   margin:0;
   padding-top:15%;
   
@@ -319,13 +245,13 @@ span{
 
 /*======================================FOOTER SECTION ============================= */
 footer{
-  position:relative;
-  width:100%;
+  width:100vw;
   height:auto;
   font-size:20px;
   text-align:center;
   color:rgb(0, 0, 0);
   background-color: #B66E57;
+  line-height:2rem;
 }
   
 .social-items{
@@ -343,9 +269,7 @@ footer{
   opacity: 0.8;
   font-size: 1.4rem;
 }
-.social-items a:hover{
-  opacity: 1;
-}
+
   
 .list-social{
   display:flex;
@@ -363,6 +287,10 @@ footer{
   color: #fff;
   text-decoration: none;
 }
+
+footer p{
+  color:#662E27;
+}
   
 .list-social li{
   padding: 0 15px;
@@ -378,4 +306,48 @@ footer{
   margin-top: 15px;
   text-align: center;
   color: #FFE7CC;
+}
+
+/* =====================Media Queries=========================== */
+
+/* Small screens */
+@media all and (min-width: 375px) and (max-width:768px) { 
+  
+  body{
+    display:flex;
+    flex-direction:column;
+  }
+
+  .elements-container,
+  .words-container{
+    font-size:12px;
+  }
+  .nav-container h1 {
+    font-size: 15px;
+  }
+
+  strong{
+    font-size:18px;
+  }
+
+  .hide {
+    top:60px;
+  }
+  .main-price-container{
+    width:100vw;
+  }
+
+  img{
+    display:block;
+    width:100px;
+    height:100px;
+  }
+
+
+  .list-social,
+  .copyright,
+  footer p{
+    font-size:15px;
+  }
+
 }
