@@ -10,7 +10,7 @@
 body,
 html{
     background-color:#FDFDF6;
-    width:100%;
+    width:100vw;
     min-height:100vh;
     margin:0rem;
     overflow-x:hidden;
@@ -144,152 +144,68 @@ strong{
   transform: rotate(-45deg) translate(7px, -6px);
 }
 
-
-/* Collapsible Nav 
-.menu-content{
-    font-family: 'Bellefair', sans-serif;
-    max-height:0;
-    padding: 0 0 0 50px;
-    overflow:hidden;
-}
-
-.hidden-menu{
-    position:relative;
-    display:flex;
-    justify-content:flex-start;
-    flex-direction:column;
-    margin:10px;
-    color:white;
-}
-
-.hidden-menu ul{
-    list-style:none;
-}
-
-.hidden-menu a{
-    display:block;
-    padding: 10px;
-    text-decoration: none;
-    color:#B66E57;
-    font-size:30px;
-    letter-spacing:5px;
-}
-
-.hidden-menu .label-color{
-    display:block;
-    background: url('/imgs/menu(2).png') no-repeat left center;
-    background-size:45px;
-    padding: 10px 25px 5px 70px;
-    cursor:pointer;
-    font-size:45px;
-    font-family:'Bellefair', sans-serif;
-} 
-
-.label-color strong{
-    color:#B68681;
-    position:relative;
-    font-size:35px;
-    font-weight: 500;
-    font-family:'Moldyen', serif;
-    padding-left:10px;
-    margin-top:5px;
-  }
-
-input#menu{
-    display:none;
-}
-.label-color{
-  text-shadow: 0px 2px black ;
-}
-input:checked + .label-color {
-    background-image: url('/imgs/diaphragm(1).png');
-    background-size:40px;
-    background-repeat: no-repeat;
-}
-
-input:checked ~ .label-color{
-    background-image: url ('/imgs/diaphragm(1).png');
-    background-size:40px;
-}
-
-input:checked ~ .menu-content{
-    background-color:#FFEADB;
-    max-height:55em;
-    width:25%;
-    opacity:.9;
-    border-radius:5px;
-}
-
   /*===================== FIRST CONTAINER ============ */
 
 .top-about-section{
-    width:100%;
-    height:70%;
-    background-color:#FDFDF6;
-    padding:10px;
-    margin:5px;
+  width:100vw;
+  height:72vh;
+  background-color:#FDFDF6;
+ 
 }
 .girl-info{
-    position:relative;
-    margin-left:100px;
-    top:1%;
-    width:30%;
-    height:55%;
-    float:left;
-    font-size:25px;
+  position:relative;
+  margin-left:55px;
+  width:40%;
+  height:75%;
+  float:left;
+  font-size:25px;
 }
 
 h3{
-    color:#994821;
+  color:#994821;
 }
 
 .photo-about img{
   position:relative;
-  left:20%;
+  left:10%;
   width:30%;
   border-radius:10%;
   border:10px solid #455e51;
 }
-
-
 /*======================== FUN FACTS ======================  */ 
 
 .five-know{
   background-color:#455e51;
-  width:100%;
-  height:45%;
+  width:100vw;
+  height:45vh;
   color:white;
-}
-.fun-facts{
-  padding:15px;
 }
 
 .fun-facts h2{
   font-family: 'Italiana', serif;
   font-size:50px;
-  margin-top:5px;
-  padding-left:30px;
+  padding-left:28px;
   color:#FFE7CC;
 }
+
 .fun-facts p{
-    font-size:25px;
-    margin:15px;
+  font-size:25px;
+  margin:15px;
 }
 
 .numbers-p{
   font-family: 'Italiana', serif;
-    font-size:45px;
-    float:left;
-    padding:5px;
-    margin:20px;
-    color:#FFE7CC;
+  font-size:45px;
+  float:left;
+  padding:5px;
+  color:#FFE7CC;
 }
 
 /*======================================FOOTER SECTION ============================= */
 
 footer{
-  position:relative;
-  width:100%;
+  width:100vw;
+  height:auto;
   font-size:20px;
   text-align:center;
   color:rgb(0, 0, 0);
@@ -314,9 +230,6 @@ footer{
   font-size: 1.4rem;
 }
   
-.social-items a:hover{
-  opacity: 1;
-  }
   
 .list-social{
   display:flex;
@@ -334,9 +247,11 @@ footer{
   color: #fff;
   text-decoration: none;
  }
-  .list-social p {
-    color:#1C383E;
-  }
+
+ footer p{
+  color:#662E27;
+}
+
 .list-social li{
   padding: 0 15px;
   display:inline-block;
@@ -353,3 +268,51 @@ footer{
   color: #FFE7CC;
 }
 
+/* =====================Media Queries=========================== */
+
+/* Small screens */
+@media all and (min-width: 375px) and (max-width:768px) {
+  .about-top{
+    font-size:25px;
+    text-shadow:2px 2px black;
+  }
+
+  .nav-container h1 {
+    font-size: 15px;
+  }
+
+  strong{
+    font-size:18px;
+  }
+
+  .hide {
+    top:60px;
+  }
+
+  .photo-about{
+    display:none;
+  }
+  
+  .girl-info{
+    width:77%;
+    font-size:18px;
+
+  }
+  .fun-facts h2{
+    font-size:40px;
+  }
+  .fun-facts p,
+  .numbers-p{
+    font-size:17px;
+    margin:0;
+    padding:0;
+    line-height:1.5em;
+  }
+
+  .list-social,
+  .copyright,
+  footer p{
+    font-size:15px;
+  }
+
+}
