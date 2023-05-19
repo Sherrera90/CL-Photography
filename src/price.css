@@ -308,15 +308,21 @@ footer p{
   color: #FFE7CC;
 }
 
+.toTop{
+  color:#662e27;
+  text-decoration: none;
+}
+
+.toTop:hover{
+  color:#455e51;
+}
+
 /* =====================Media Queries=========================== */
 
 /* Small screens */
 @media all and (min-width: 375px) and (max-width:768px) { 
   
-  body{
-    display:flex;
-    flex-direction:column;
-  }
+  
 
   .elements-container,
   .words-container{
