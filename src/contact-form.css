@@ -27,7 +27,10 @@ html{
   height:85vh;
 }
 
-.top-menu{
+.title-menu{
+  display:flex;
+  justify-content: center;
+  align-items:center;
   width:100%;
   height:85vh;
   display:flex;
@@ -35,12 +38,12 @@ html{
   align-items:center;
 }
 
-.top-menu h1{
-  width:100%;
-  height:85vh;
+.title-menu h1{
   display:flex;
   justify-content: center;
   align-items:center;
+  width:100%;
+  height:85vh;
   position:relative;
   text-shadow:5px 5px black;
   font-size:100px;
@@ -110,6 +113,7 @@ strong{
 .nav-container h1{
   color:#B66E57;
   font-size:35px;
+  text-shadow: 2px 2px black;
 }
 
 .links-nav{
@@ -121,7 +125,7 @@ strong{
   flex-direction:column;
   justify-content:center;
   position:absolute;
-  top: -330px;
+  top: -400px;
   right:0;
   background-color:rgba(246, 244, 235, 0.8);
   padding: 15px 0;
@@ -201,39 +205,89 @@ footer{
   opacity: 0.8;
   font-size: 1.4rem;
 }
-.social-items a:hover{
+    
+.list-social{
+  display:flex;
+  justify-content:center;
+  padding: 0;
+  margin-top: 0;
+  font-size: 20px;
+  line-height: 1.6;
+  list-style: none;
+  margin-bottom: 0;
+}
+    
+.list-social a{
+  opacity: 0.8;
+  color: #fff;
+  text-decoration: none;
+}
+    
+.list-social li{
+  padding: 0 15px;
+  display:inline-block;
+}
+    
+.list-social a:hover{
   opacity: 1;
 }
     
-  .list-social{
-    display:flex;
-    justify-content:center;
-    padding: 0;
-    margin-top: 0;
-    font-size: 20px;
-    line-height: 1.6;
-    list-style: none;
-    margin-bottom: 0;
+.copyright{
+  font-size: 18px;
+  margin-top: 15px;
+  text-align: center;
+  color: #FFE7CC;
+}
+
+footer p{
+  color:#662e27;
+}
+
+.toTop{
+  color:#662e27;
+  text-decoration: none;
+}
+
+.toTop:hover{
+  color:#455e51;
+}
+  /* =====================Media Queries=========================== */
+
+/* Small screens */
+@media all and (min-width: 350px) and (max-width:768px) {
+  
+  .title-menu,
+  .title-menu h1{
+    margin:5%;
+    font-size:45px;
+    text-shadow:2px 2px black;
   }
-    
-  .list-social a{
-    opacity: 0.8;
-    color: #fff;
-    text-decoration: none;
+
+  .top-container {
+    width: 100vw;
+    height:45%;
   }
-    
-  .list-social li{
-    padding: 0 15px;
-    display:inline-block;
+
+  .nav-container h1 {
+    font-size: 15px;
   }
-    
-  .list-social a:hover{
-    opacity: 1;
+
+  strong{
+    font-size:18px;
   }
-    
-  .copyright{
-    font-size: 18px;
-    margin-top: 15px;
-    text-align: center;
-    color: #FFE7CC;
+
+  .hide {
+    top:55px;
   }
+
+  .contact-info{
+   display:none;
+  }
+
+  .list-social,
+  .copyright,
+  footer p{
+    font-size:15px;
+  }
+
+}
