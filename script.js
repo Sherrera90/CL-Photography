@@ -24,15 +24,15 @@ function toggleTitle(){
   let displayTitle = navLinks.style.display;
 
   if(titleMenu.style.display =='none'){
-    titleMenu.style.display='block';
+    titleMenu.style.display='flex';
   }
   else{
     titleMenu.style.display='none';
-    
+
   }
 }
 
-
+///About Me h3 change ///
 
 
 
