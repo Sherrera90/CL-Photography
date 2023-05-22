@@ -319,12 +319,6 @@ footer p{
 
 /* Small screens */
 @media all and (min-width: 375px) and (max-width:768px) { 
- 
-  .price-top{
-    max-width:100%;
-    height:auto;
-  }
-
   .price-top .price{
     font-size:45px;
   }
