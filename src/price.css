@@ -26,6 +26,9 @@ html{
 }
 
 .price-top{
+  display:flex;
+  justify-content:center;
+  align-items:center;
   background-image:url('/imgs/untitled-118.jpeg');
   background-repeat:no-repeat;
   background-position:center;
