@@ -280,6 +280,15 @@ footer{
 /* Small screens */
 @media all and (min-width: 375px) and (max-width:768px) {
 
+  .header-top{
+    background-image:url('/imgs/flower-shot.jpeg');
+    background-repeat:no-repeat;
+    background-position:center;
+    background-attachment:inherit;
+    max-width:100%;
+    }
+
+
   .title-menu{
     font-size:25px;
     text-shadow:2px 2px black;
