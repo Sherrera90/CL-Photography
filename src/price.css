@@ -324,6 +324,10 @@ footer p{
 @media all and (min-width: 375px) and (max-width:768px) { 
  
   .price-top{
+    background-image:url('/imgs/untitled-118.jpeg');
+    background-repeat:no-repeat;
+    background-position:center;
+    background-attachment:inherit;
     max-width:100%;
   }
 
@@ -333,7 +337,7 @@ footer p{
   .main-price-container aside{
     width:100vw;
     padding-top:-10px;
-    margin-top:25%;
+    margin-top:30%;
   }
   .elements-container{
     width:95%;
